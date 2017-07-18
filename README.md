@@ -37,3 +37,8 @@ $ npm run build
 2. [支持es6语法](./optimation/supportEs6.md)
 
 
+
+## plugins选讲
+
+- [webpack-merge](https://npm.taobao.org/package/webpack-merge) --> it provides a `merge` function that concatenates(联系) arrays and merges objects creating a new object.
+

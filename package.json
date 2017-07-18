@@ -4,8 +4,8 @@
   "description": "webpack demo",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.config.dev.js",
-    "build": "webpack --config webpack.config.prod.js",
+    "dev": "webpack-dev-server --config ./build/webpack.config.dev.js",
+    "build": "webpack --config ./build/webpack.config.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -31,6 +31,7 @@
     "optimize-css-assets-webpack-plugin": "^2.0.0",
     "style-loader": "^0.18.2",
     "webpack": "^3.0.0",
-    "webpack-dev-server": "^2.5.0"
+    "webpack-dev-server": "^2.5.0",
+    "webpack-merge": "^4.1.0"
   }
 }
