@@ -32,8 +32,8 @@ $ npm run build
 
 ## 优化历史(optimation 文件夹中)
 
-- [提交到github忽略node_modules等文件](./optimation/gitignore.md)
+1. [提交到github忽略node_modules等文件](./optimation/gitignore.md)
 
-- [支持es6语法]()
+2. [支持es6语法](./optimation/supportEs6.md)
 
 
