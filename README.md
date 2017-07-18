@@ -32,4 +32,6 @@ $ npm run build
 
 ## 优化历史
 
+- [提交到github忽略node_modules等文件](./optimation/gitignore.md)
+
 
