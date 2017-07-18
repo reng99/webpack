@@ -21,7 +21,7 @@ Babel转码器是一个广泛使用的ES6转码器，可以将ES6转码为ES5。
 
     // .babelrc
     {
-    “presets”: [],
+    "presets": [],
     "plugins": [],
     }
 
