@@ -1,0 +1,18 @@
+
+ @font-face {
+   font-family: 'MyFont';
+   src:  url('../fonts/my-font.woff2') format('woff2'),
+         url('../fonts/my-font.woff') format('woff');
+   font-weight: 600;
+   font-style: normal;
+}
+@blue:blue;
+body{
+    //background:url('../assets/images/webpack_image.jpeg') no-repeat;
+    p{
+        font-family: 'MyFont';
+        color:@blue;
+        background:url('../../assets/images/bg.png') repeat;
+    }
+}
+

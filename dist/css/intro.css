@@ -1,0 +1,1 @@
+@font-face{font-family:MyFont;src:url(../fonts/my-font.woff2) format("woff2"),url(../fonts/my-font.woff) format("woff");font-weight:600;font-style:normal}body p{font-family:MyFont;color:blue;background:url(../images/bg.png) repeat}
