@@ -63,7 +63,7 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin({//从bundle中提取出
             filename:(getPath)=>{
-                return getPath('css/[name].css').replace('css/js', 'css');//.js文件中的.css|.less|.sass内容转换成转换成.css文件
+                return getPath('css/[name].min.css').replace('css/js', 'css');//.js文件中的.css|.less|.sass内容转换成转换成.css文件
             },
             disable:false,//禁用插件为false
             allChunks:true

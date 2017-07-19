@@ -1,0 +1,12 @@
+# 详情查考http://editorconfig.org/
+
+root = true #表明是最顶层的配置文件，发现设为true时，才会停止查找.editorconfig文件。
+
+# Unix-style newlines with a newline ending every file
+[*]
+charset = utf-8 #编码，latin1、utf-8、utf-8-bom、utf-16be和utf-16le，不建议使用utf-8-bom。
+indent_style = space #设置缩进风格，tab或者空格。tab是hard tabs，space为soft tabs。
+indent_size = 4 #缩进的宽度，即列数，整数。如果indent_style为tab，则此属性默认为tab_width。
+end_of_line = cr #换行符，lf、cr和crlf
+insert_final_newline = true #设为true表明使文件以一个空白行结尾
+trim_trailing_whitespace = true #设为true表示会除去换行行首的任意空白字符。
