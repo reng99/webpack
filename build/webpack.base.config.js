@@ -4,8 +4,8 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
     entry:{//string|object|array,起点或者是应用程序的起点入口。从这个起点开始，应用程序启动执行。如果传递一个数组，那么数组的每一项都会执行
         home:'./src/js/index.js',
-        test:'./src/css/index.css',
-        intro:'./src/less/index.less'
+        // test:'./src/css/index.css',
+        // intro:'./src/less/index.less'
     },
     output:{//指示webpack如何去输出，以及在哪里输出你的「bundle、asset和其他你所打包或使用webpack载入的任何内容」。
         path:path.join(__dirname,'../dist/'),//目录对应一个绝对路径
@@ -63,10 +63,11 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin({//从bundle中提取出
             filename:(getPath)=>{
-                return getPath('css/[name].css').replace('css/js', 'css');//将入口文件的.css/.less文件从输出的.js文件转换成.css文件
+                return getPath('css/[name].css').replace('css/js', 'css');//.js文件中的.css|.less|.sass内容转换成转换成.css文件
             },
             disable:false,//禁用插件为false
             allChunks:true
         }),
+        //new ExtractTextPlugin('css/[name].css')
     ]
 }
