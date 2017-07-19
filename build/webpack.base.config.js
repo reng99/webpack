@@ -59,5 +59,14 @@ module.exports = {
                 ]
             }
         ]
-    }
+    },
+    plugins: [
+        new ExtractTextPlugin({//从bundle中提取出
+            filename:(getPath)=>{
+                return getPath('css/[name].css').replace('css/js', 'css');//将入口文件的.css/.less文件从输出的.js文件转换成.css文件
+            },
+            disable:false,//禁用插件为false
+            allChunks:true
+        }),
+    ]
 }
