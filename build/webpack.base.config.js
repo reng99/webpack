@@ -13,7 +13,7 @@ function resolve(dir){//因为自己改变了文件的路径，这里需要重�
 module.exports = {
     entry:{//string|object|array,起点或者是应用程序的起点入口。从这个起点开始，应用程序启动执行。如果传递一个数组，那么数组的每一项都会执行
         common:'./src/js/common/common.js',
-        home:'./src/js/index.js',
+        index:'./src/js/index.js',
         about:'./src/js/about.js'
         // test:'./src/css/index.css',
         // intro:'./src/less/index.less'
@@ -75,7 +75,7 @@ module.exports = {
         new HtmlWebpackPlugin({//简化了html文件的创建，以便为webpack包提供服务。
             filename:resolve('/dist/index.html'),//处理dirname路径的问题 ，这里等同于'../dist/index.html'
             template:'./src/index.html',
-            chunks:['common','home']//选择加载的css和js
+            chunks:['common','index']//选择加载的css和js,模块名对应上面entry接口的名称
         }),
         new HtmlWebpackPlugin({
             filename:resolve('/dist/about.html'),
