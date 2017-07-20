@@ -1,9 +1,20 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+
+// node:{
+//         __dirname:true//“__dirname”是node.js中的一个全局变量，它指向当前执行脚本所在的目录。
+//     }
+function resolve(dir){//因为自己改变了文件的路径，这里需要重新处理一下
+    return path.join(__dirname,'..',dir);
+}
 
 module.exports = {
     entry:{//string|object|array,起点或者是应用程序的起点入口。从这个起点开始，应用程序启动执行。如果传递一个数组，那么数组的每一项都会执行
+        common:'./src/js/common/common.js',
         home:'./src/js/index.js',
+        about:'./src/js/about.js'
         // test:'./src/css/index.css',
         // intro:'./src/less/index.less'
     },
@@ -61,12 +72,22 @@ module.exports = {
         ]
     },
     plugins: [
+        new HtmlWebpackPlugin({//简化了html文件的创建，以便为webpack包提供服务。
+            filename:resolve('/dist/index.html'),//处理dirname路径的问题 ，这里等同于'../dist/index.html'
+            template:'./src/index.html',
+            chunks:['common','home']//选择加载的css和js
+        }),
+        new HtmlWebpackPlugin({
+            filename:resolve('/dist/about.html'),
+            template:'./src/about.html',
+            chunks:['common','about']
+        }),
         new ExtractTextPlugin({//从bundle中提取出
             filename:(getPath)=>{
                 return getPath('css/[name].min.css').replace('css/js', 'css');//.js文件中的.css|.less|.sass内容转换成转换成.css文件
             },
             disable:false,//禁用插件为false
-            allChunks:true
+            // allChunks:true
         }),
         //new ExtractTextPlugin('css/[name].css')
     ]
