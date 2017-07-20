@@ -16,7 +16,7 @@ module.exports = merge(baseWebpackConfig,{
     plugins:[//插件，具体的内容可以查看链接 -- https://doc.webpack-china.org/plugins/
         new HtmlWebpackPlugin({
             template:'./src/index.html',
-            chunks:['home','test','intro']
+            //chunks:['home','test','intro']//加载的模块'home','test','intro',入口文件的entry的模块名
         })
     ],
 })
