@@ -3,3 +3,7 @@ require("../../less/common/common.less");
 
 //全局的javascript代码
 console.log("common content");
+
+function reng(){
+    console.log("reng jia ming");
+}

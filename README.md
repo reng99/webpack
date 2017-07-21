@@ -10,7 +10,10 @@
 
 ## 相关参考
 
-[webpack官网](http://webpack.github.io/)
+- [webpack官网](http://webpack.github.io/)
+
+- [eslint配置](http://eslint.org/docs/user-guide/configuring)
+
 
 ## 使用方法
 
@@ -37,6 +40,8 @@ $ npm run build
 2. [支持es6语法](./optimization/supportEs6.md)
 
 3. [团队ide中editorconfig规范](./optimization/editorconfig.md)
+
+4. [添加eslint规范代码]()
 
 
 

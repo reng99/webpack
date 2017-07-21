@@ -29,8 +29,9 @@ module.exports = {
         rules:[//格式array,创建模块时，匹配请求的规则数组。这些规则能够对修改模块的创建方式。这些规则能够对（module）应用loader，或修改解析器（parser）
             {// 处理js-es6的规则
                 test:/\.js$/,//匹配资源，处理的文件的后缀名
-                use:['babel-loader'],//每个入口（entry）指定使用一个loader，处理的加载器是loader
-                include:path.join(__dirname,'src')//包含的路径（匹配特定条件）
+                exclude:path.join(__dirname,'node_modules'),//排除匹配的文件夹
+                use:["babel-loader"],//每个入口（entry）指定使用一个loader，处理的加载器是loader
+                include:path.join(__dirname,'src'),//包含的路径（匹配特定条件）
             },
             {
                 test:/\.css$/,
