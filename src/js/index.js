@@ -4,3 +4,9 @@
 require('../less/index.less');
 
 console.log("index content");
+
+
+
+const arr = ['reng','jia','ming'];
+
+alert(_.first(arr));
