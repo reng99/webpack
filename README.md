@@ -30,6 +30,7 @@ $ npm run dev
 
 # 生产模式
 $ npm run build
+[注意，在生产模式中，使用到的第三方的资源需要额外在vendor文件夹中按需引用]
 
 ```
 
@@ -51,3 +52,11 @@ $ npm run build
 
 - [uglifyjs-webpack-plugin](https://doc.webpack-china.org/plugins/uglifyjs-webpack-plugin/) --> uglify js
 
+- [plugin ProvidePlugin](https://webpack.github.io/docs/shimming-modules.html#plugin-provideplugin) --> This plugin makes a module availble as a variable in `every` module is required only you use the variable.
+
+
+## vendor 引用
+
+- [jQuery](https://jquery.com/) --> jQuery is a fast,small,and feature-rich Javascript library.It makes things like HTML document traversal and manipulation,event handling,and Ajax much simpler with an easy-to-use API that works across a multitude of browers.With a combination of versatility,jQuery has changed the way thar millions of people write Javascript.
+
+- [lodash](https://lodash.com/) --> A modern JavaScript utility library delivering modularity(模块化),performance & extras. 类似[underscore](http://underscorejs.org/)
