@@ -12,6 +12,14 @@ module.exports = merge(baseWebpackConfig,{
         compress:true,//一切服务都启用「gzip」压缩
         //quiet:true,//除了初始化启动信息之外的任何内容都不会被打印到控制台。这也就意味着来自webpack的错误或警告在控制台不可见
     },
+    plugins:[
+        new webpack.ProvidePlugin({
+            $: "jquery",//jquery
+            jQuery: "jquery",
+            "window.jQuery": "jquery",
+            _:'lodash'//lodash
+        })
+    ]
 })
 
 
