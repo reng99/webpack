@@ -42,7 +42,9 @@ $ npm run build
 
 3. [团队ide中editorconfig规范](./optimization/editorconfig.md)
 
-4. [添加eslint规范代码]()
+4. [添加服务器外部可以访问](./optimization/devhost.md)
+
+5. [添加eslint规范代码]()
 
 
 
