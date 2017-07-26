@@ -27,11 +27,17 @@ module.exports = {
     },
     module:{ //处理项目中的不同的模块
         rules:[//格式array,创建模块时，匹配请求的规则数组。这些规则能够对修改模块的创建方式。这些规则能够对（module）应用loader，或修改解析器（parser）
-            {
-                enforce:"pre",
-                test:/\.js$/,
+            {//本json是对js的eslint的检查
+                enforce:"pre",//在babel-loader对源码进行编译前进行lint的检查
+                test:/\.(js|html)$/,//检查js文件和html文件内的javascript代码的规范
                 exclude:path.join(__dirname,'node_module'),
-                loader:"eslint-loader",
+                use:[{
+                    loader:"eslint-loader",
+                    options:{
+                        formatter: require('eslint-friendly-formatter')   // 编译后错误报告格式
+                    }
+                }],
+                include:path.join(__dirname,'src'),
             },
             {// 处理js-es6的规则
                 test:/\.js$/,//匹配资源，处理的文件的后缀名
