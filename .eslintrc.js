@@ -7,8 +7,8 @@ module.exports = {
         "commonjs": true,
         "es6": true,//至此es6语法检查
     },
-    //"extends": "eslint:recommended",//表示使用默认的规则进行校验
-    "extends":"standard",
+    "extends": "eslint:recommended",//表示使用默认的规则进行校验
+    //"extends":"standard",
     "parserOptions": {
         "sourceType": "module"
     },
