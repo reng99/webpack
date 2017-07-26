@@ -25,10 +25,10 @@ module.exports = {
             "error",//可以用2代替error
             "tab"
         ],
-        "linebreak-style": [
-            "error",
-            "unix"//如果是在window平台上开发的话，就要改成""windows"
-        ],
+        // "linebreak-style": [
+        //     "error",
+        //     "unix"//如果是在window平台上开发的话，就要改成""windows"
+        // ],
         "quotes": [//字符串的引用使用双引号
             "error",
             "double"
