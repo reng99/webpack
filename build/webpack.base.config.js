@@ -36,8 +36,7 @@ module.exports = {
                     options:{
                         formatter: require('eslint-friendly-formatter')   // 编译后错误报告格式
                     }
-                }],
-                include:path.join(__dirname,'src'),
+                }]
             },
             {// 处理js-es6的规则
                 test:/\.js$/,//匹配资源，处理的文件的后缀名
