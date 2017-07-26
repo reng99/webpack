@@ -2,4 +2,4 @@
 require("../less/about.less");
 
 // about 页面相关的 javascript
-console.log('about content');
+console.log("about content");

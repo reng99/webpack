@@ -27,6 +27,12 @@ module.exports = {
     },
     module:{ //处理项目中的不同的模块
         rules:[//格式array,创建模块时，匹配请求的规则数组。这些规则能够对修改模块的创建方式。这些规则能够对（module）应用loader，或修改解析器（parser）
+            {
+                enforce:"pre",
+                test:/\.js$/,
+                exclude:path.join(__dirname,'node_module'),
+                loader:"eslint-loader",
+            },
             {// 处理js-es6的规则
                 test:/\.js$/,//匹配资源，处理的文件的后缀名
                 exclude:path.join(__dirname,'node_modules'),//排除匹配的文件夹
