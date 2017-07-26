@@ -27,7 +27,7 @@ module.exports = {
         ],
         "linebreak-style": [
             "error",
-            "unix"
+            "unix"//如果是在window平台上开发的话，就要改成""windows"
         ],
         "quotes": [//字符串的引用使用双引号
             "error",
@@ -39,7 +39,7 @@ module.exports = {
         ],
         "no-console":"off"//不检查console.log的语法，忽略它
     },
-    "globals":{
+    "globals":{//声明在代码中自定义的全局变量
         "document":true,
         "navigator":true,
         "window":true,
