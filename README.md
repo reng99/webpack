@@ -28,6 +28,9 @@ $ npm install
 # 开发模式
 $ npm run dev
 
+# 检查语法(此步骤可省略，因为在开发的过程中已经检查)
+$ npm run lint
+
 # 生产模式
 $ npm run build
 [注意，在生产模式中，使用到的第三方的资源需要额外在vendor文件夹中按需引用]
