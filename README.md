@@ -33,7 +33,7 @@ $ npm run lint
 
 # 生产模式
 $ npm run build
-[注意，在生产模式中，使用到的第三方的资源需要额外在vendor文件夹中按需引用]
+[注意，在生产模式中，使用到的第三方的资源需要额外在vendor文件夹中按需引用,建议引用相关的CDN(Content Delivery Network 【内容分发网络】)来进行前端优化]
 
 ```
 
