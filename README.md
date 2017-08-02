@@ -47,7 +47,7 @@ $ npm run build
 
 4. [添加服务器外部可以访问](./optimization/devhost.md)
 
-5. [添加eslint规范代码]()
+5. [添加eslint规范代码](./optimization/eslint.md)
 
 
 
