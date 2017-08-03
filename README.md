@@ -1,18 +1,21 @@
 ## 简介
 
-基于webpack开发，搭建公司的项目，适合PC端的多页面开发。完善搭建中，喜欢的话就star🌟一下咯。如有不妥的地方，还请指正，不胜感激。
+基于webpack开发，搭建公司的项目，适合PC端的多页面开发。喜欢的话就star🌟一下咯。如有不妥的地方，还请指正，不胜感激。
+
+
+## 项目背景
+
+因为业务的需要，自己被抽调出来支持另外一个项目。然而，这个项目只有我一个前端，再然而，自己没有跟java的合作过。
+
+他们的技术选型初期是，网页是使用多页面的，前端（我）这边是提供静态的网页给到他们，然后他们使用freemarker来进行数据的写入，然后有什么交互的话我再介入。让后自己就构造出了这么一个实现多页面的`webpack`项目。
+
+昨天进行交流，现在是百分之六十确定上面的方案，不过这样他们后台的工作量就增多，而且好像我也用不到前端的框架。乘着设计还没给设计稿，然后我今天又新建了一个仓库[vue-cli_multipage](https://github.com/reng99/vue-cli_multipage)，用来探讨一下vue实现多页面应用。
 
 
 ## 项目地址
 
 [https://github.com/reng99/webpack](https://github.com/reng99/webpack)
 
-
-## 相关参考
-
-- [webpack官网](http://webpack.github.io/)
-
-- [eslint配置](http://eslint.org/docs/user-guide/configuring)
 
 
 ## 使用方法
@@ -65,3 +68,20 @@ $ npm run build
 - [jQuery](https://jquery.com/) --> jQuery is a fast,small,and feature-rich Javascript library.It makes things like HTML document traversal and manipulation,event handling,and Ajax much simpler with an easy-to-use API that works across a multitude of browers.With a combination of versatility,jQuery has changed the way thar millions of people write Javascript.
 
 - [lodash](https://lodash.com/) --> A modern JavaScript utility library delivering modularity(模块化),performance & extras. 类似[underscore](http://underscorejs.org/)
+
+
+## 仓库说明
+
+- 本仓库用到的代码是自己学习中总结的
+
+- 本仓库用到的图片是自己在谷歌浏览器上运行的截图
+
+- 本仓库中部分文字引用出自网络，如有侵权，请与我联系--1837895991@qq.com 。我会在第一时间删除。
+
+
+## 相关参考
+
+- [webpack官网](http://webpack.github.io/)
+
+- [eslint配置](http://eslint.org/docs/user-guide/configuring)
+
