@@ -13,7 +13,7 @@
 
 -----------------分割线--------------------
 
-在这两天的搭建[vue-cli_multipage](https://github.com/reng99/vue-cli_multipage)项目中，自己深深感到用vue实现的mpa页面的恶意，混合的东西还是很多，对于多页面来说是个头疼的问题。原谅自己的水平有限，后期回头再看看[vue-cli_multipage](https://github.com/reng99/vue-cli_multipage)。因为在这方面的种种问题，还是使用现在的这个搭建好的`webpack`项目来支持公司的业务（最多要减轻后端压力的话，自己再学点`freemarker`语法），因为`webpack`项目是自己纯手动搭建的，不像`vue-cli`脚手架搭建mpa，出了什么问题那我就有的背锅了。:brush
+在这两天的搭建[vue-cli_multipage](https://github.com/reng99/vue-cli_multipage)项目中，自己深深感到用vue实现的mpa页面的恶意，混合的东西还是很多，对于多页面来说是个头疼的问题。原谅自己的水平有限，后期回头再看看[vue-cli_multipage](https://github.com/reng99/vue-cli_multipage)。因为在这方面的种种问题，还是使用现在的这个搭建好的`webpack`项目来支持公司的业务（最多要减轻后端压力的话，自己再学点`freemarker`语法），因为`webpack`项目是自己纯手动搭建的，不像`vue-cli`脚手架搭建mpa，出了什么问题那我就有的背锅了。:blush:
 
 
 ## 项目地址
