@@ -9,7 +9,10 @@
 
 他们的技术选型初期是，网页是使用多页面的，前端（我）这边是提供静态的网页给到他们，然后他们使用freemarker来进行数据的写入，然后有什么交互的话我再介入。让后自己就构造出了这么一个实现多页面的`webpack`项目。
 
-昨天进行交流，现在是百分之六十确定上面的方案，不过这样他们后台的工作量就增多，而且好像我也用不到前端的框架。乘着设计还没给设计稿，然后我今天又新建了一个仓库[vue-cli_multipage](https://github.com/reng99/vue-cli_multipage)，用来探讨一下vue实现多页面应用。
+昨天进行交流，现在是百分之六十确定上面的方案，不过这样他们后台的工作量就增多，而且好像我也用不到前端的框架。乘着设计还没给设计稿，然后我又新建了一个仓库[vue-cli_multipage](https://github.com/reng99/vue-cli_multipage)，用来探讨一下vue实现多页面应用。
+
+-----------------分割线--------------------
+在这两天的搭建[vue-cli_multipage](https://github.com/reng99/vue-cli_multipage)项目中，自己深深感到用vue实现的mpa页面的恶意，混合的东西还是很多，对于多页面来说是个头疼的问题。原谅自己的水平有限，后期回头再看看[vue-cli_multipage](https://github.com/reng99/vue-cli_multipage)。因为在这方面的种种问题，还是使用现在的这个搭建好的webpack项目来支持公司的业务（最多要减轻后端压力的话，自己再学点freemarker语法），因为webpack项目是自己纯手动搭建的，不像vue-cli脚手架搭建mpa，出了什么问题那我就有的背锅了。:blush
 
 
 ## 项目地址
