@@ -1,3 +1,53 @@
-#index{
-    color:blue;
+header{
+    padding:8px 0;
+    .container{
+        .title{
+            li:first-child{
+                a{
+                    color:#51A966;
+                }
+            }
+        }
+    }
 }
+.main_body{
+    width:100%;
+    .banner{
+        height:748px;
+        background:url('../images/index/banner_bg.jpg') no-repeat;
+    }
+    .container{
+        height:800px;
+        &.guild{
+            background:url('../images/index/voice_bg.gif') no-repeat;
+        }
+        &.gift{
+            background: url('../images/index/gift_bg.jpg') no-repeat;
+        }
+        &.voice{
+            background:url('../images/index/voice_bg.gif') no-repeat;
+        }
+        &.live{
+            background:url('../images/index/live_bg.jpg') no-repeat;
+        }
+    }
+    section{
+        height:120px;
+        width:1200px;
+        margin:0 auto;
+        padding:50px 0;
+        display: flex;
+        flex-direction:row;
+        border-bottom:1px solid #999;
+        .section_container{
+            width:380px;
+            padding-left:19px;
+            border-left:1px solid #999;
+            h4{
+                font-size:20px;
+                margin-bottom:10px;
+            }
+        }
+    }
+}
+

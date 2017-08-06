@@ -5,7 +5,7 @@ require("../less/index.less");
 
 console.log("index content");
 
-const arr = ["reng","jia","ming"];
+// const arr = ["reng","jia","ming"];
 
-alert(_.first(arr));
-$("#index").html("reng");
+// alert(_.first(arr));
+// $("#index").html("reng");

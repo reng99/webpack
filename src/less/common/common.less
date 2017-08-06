@@ -1,17 +1,75 @@
 //这里放网站的全局的样式
-@font-face {
-   font-family: 'MyFont';
-   src:  url('../../fonts/my-font.woff2') format('woff2'),
-         url('../../fonts/my-font.woff') format('woff');
-   font-weight: 600;
-   font-style: normal;
-}
-@99:#999;
+// @font-face {
+//    font-family: 'MyFont';
+//    src:  url('../../fonts/my-font.woff2') format('woff2'),
+//          url('../../fonts/my-font.woff') format('woff');
+//    font-weight: 600;
+//    font-style: normal;
+// }
+// @99:#999;
+// body{
+//     font-family: 'MyFont';
+//     //font-family:'微软雅黑';
+//     background:@99;
+//     p{
+//         background:url('../../images/common/bg.png');
+//     }
+// }
+
 body{
-    font-family: 'MyFont';
-    //font-family:'微软雅黑';
-    background:@99;
-    p{
-        background:url('../../images/common/bg.png');
+    min-width:1200px;
+}
+*{
+    margin:0;
+    padding:0;
+}
+
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    outline: none;
+    color:#333;
+}
+
+header{
+    width:100%;
+    height:36px;
+    background:#fff;
+    .container{
+        margin:0 auto;
+        width:1200px;
+        height:36px;
+        .logo{
+            height:36px;
+            width:100px;
+            background:url('../../images/common/TT_logo.png') no-repeat;
+            float:left;
+        }
+        .title{
+            height:36px;
+            width:202px;
+            float:right;
+            ul{
+                font-size:14px;
+                height:20px;
+                margin-top:8px;
+                display:flex;
+                flex-direction:row;
+                li{
+                    line-height:20px;
+                    text-align:center;
+                    width:100px;
+                    border-right: 1px solid #333;
+                    &:hover{
+                        cursor:pointer;
+                    }
+                }
+                li:last-child{
+                    border:none;
+                }
+            }
+        }
     }
 }
