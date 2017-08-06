@@ -44,6 +44,24 @@ $ npm run build
 
 ```
 
+生产环境中引入了`vendor`里面的内容，如下
+
+```javascript
+
+    ...
+    new webpack.ProvidePlugin({
+        $: "jquery",//jquery
+        jQuery: "jquery",
+        "window.jQuery": "jquery",
+        _:"lodash"//lodash
+    })
+    ...
+
+```
+
+然而在生产环境中没有引用到，所以，在`npm run build`之后，你需要在使用到的页面引用`vendor`文件夹里面的内容。
+
+
 ## 优化历史(optimation 文件夹中)
 
 1. [提交到github忽略node_modules等文件](./optimization/gitignore.md)
