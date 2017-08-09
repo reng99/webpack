@@ -74,6 +74,8 @@ $ npm run build
 
 5. [添加eslint规范代码](./optimization/eslint.md)
 
+6. [添加chunkhash值管理资源](./optimization/chunkhash.md)(2017-08-09)
+
 
 
 ## plugins选讲
