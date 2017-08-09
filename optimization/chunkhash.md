@@ -44,6 +44,33 @@
 
 【注意】⚠️ ️不过为了方便管理，我在生产环境和开发环境的过程中都用了`chunkhash`
 
+代码的添加如下：
+
+在`build->webpack.base.config.js`内修改js和css输出的文件就可以了
+
+```javascript
+
+    ...
+
+        output:{
+                path:path.join(__dirname,'../dist/'),
+                filename:'js/[name].[chunkhash].min.js',//添加chunkhash
+            },
+        plugins: [
+            new ExtractTextPlugin({
+                filename:(getPath)=>{
+                    return getPath('css/[name].[chunkhash].min.css').replace('css/js', 'css');//添加chunkhash
+                },
+                disable:false,
+            }),
+            ...
+        ]
+
+    ...
+
+```
+
+
 > 以文件内容的hash值为依据生产新文件的非覆盖式发布策略是解决静态资源缓存更新最有效的手段
 
 
