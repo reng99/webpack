@@ -10,24 +10,23 @@ header{
     }
 }
 #index{
-    width:100%;
-    .banner{
-        height:748px;
-        background:url('../images/index/banner_bg.jpg') no-repeat;
-    }
     .container{
         height:800px;
+        &.banner{
+            height:748px;
+            background:url('../images/index/banner_bg.jpg') no-repeat center;
+        }
         &.guild{
-            background:url('../images/index/voice_bg.gif') no-repeat;
+            background:url('../images/index/voice_bg.gif') no-repeat center;
         }
         &.gift{
-            background: url('../images/index/gift_bg.jpg') no-repeat;
+            background: url('../images/index/gift_bg.jpg') no-repeat center;
         }
         &.voice{
-            background:url('../images/index/voice_bg.gif') no-repeat;
+            background:url('../images/index/voice_bg.gif') no-repeat center;
         }
         &.live{
-            background:url('../images/index/live_bg.jpg') no-repeat;
+            background:url('../images/index/live_bg.jpg') no-repeat center;
         }
     }
     section{
@@ -49,3 +48,11 @@ header{
     }
 }
 
+@media (min-width:1920px){//大于图片的大小1200px的时候将图片拉长
+    #index{
+        .container{
+            width:100%;
+            height:auto;
+        }
+    }
+}
