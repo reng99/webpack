@@ -16,22 +16,27 @@
 //     }
 // }
 
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0;}
 body{
     min-width:1200px;
-}
-*{
-    margin:0;
-    padding:0;
+    font:12px"宋体","Arial Narrow",HELVETICA;
+    background:#fff;
+    -webkit-text-size-adjust: 100%;//webkit内核的浏览器(chrome)中,当在css中定义的中文font-size小于12px的时候,浏览器仍然使用12px,这时就可以用-webkit-text-size-adjust:none;
 }
 
-ul,li{
-    list-style: none;
+a{color:#666;text-decoration:none;}
+a:hover{color:#51A966;}
+em{font-size:normal;}
+li{list-style: none;}
+img{border:0;vertical-align: middle;}
+table{
+    border-collapse:collapse;//为表格设置合并边框模型：
+    border-spacing:0;
 }
-a{
-    text-decoration: none;
-    outline: none;
-    color:#333;
-}
+p{word-break:break-word;}
+
+
+
 
 header{
     padding:8px 0;
@@ -88,7 +93,6 @@ footer{
         color:#666;
         margin-bottom:6px;
         a{
-            color:#666;
             padding:0 8px 0 6px;
             &:hover{
                 text-decoration: underline;
