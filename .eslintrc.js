@@ -21,10 +21,10 @@ module.exports = {
     ],
     "rules": {
         //规则有3个等级：off（0）、warn（1）和error（2）。off表示禁用这条规则，warn表示给出警告，并不会导致检查不通过，而error则会导师检查不通过
-        "indent": [//缩进
-            "error",//可以用2代替error
-            "tab"
-        ],
+        // "indent": [//缩进
+        //     "error",//可以用2代替error
+        //     "tab"
+        // ],
         // "linebreak-style": [
         //     "error",
         //     "unix"//如果是在window平台上开发的话，就要改成""windows"
