@@ -41,6 +41,7 @@ $ npm run lint
 # 生产模式
 $ npm run build
 [注意，在生产模式中，使用到的第三方的资源需要额外在vendor文件夹中按需引用,建议引用相关的CDN(Content Delivery Network 【内容分发网络】)来进行前端优化]
+[如果在生产环境中，相关的.js文件只是引入了.less的文件，那么在生产环境中就要去除生产的相关的.js文件，保留相关的.css文件就可以了。比如：about.js文件引入了about.less的代码，但是about.js文件中没有任何的javascript代码，在生产环境中保留相关的about.css(build后的文件名称有所不同)文件，删除多余的about.js(build后的文件名称有所不同)]
 
 ```
 
