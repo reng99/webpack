@@ -48,9 +48,7 @@ module.exports = {
                 test:/\.css$/,
                 use:ExtractTextPlugin.extract({
                     fallback:'style-loader',
-                    use:{
-                        loader:'css-loader'
-                    },
+                    use:['css-loader','autoprefixer-loader'],
                     publicPath: "../"//生产环境下（也就是npm run build之后）重写资源的引入的路径,参考链接https://webpack.js.org/plugins/extract-text-webpack-plugin/#-extract
                 })
             },
