@@ -78,8 +78,17 @@ module.exports = {
                     // 'file-loader'//等同于{loader:'file-loader'}
                     {loader:'file-loader?limit=1024&name=fonts/[name].[ext]'}//加载器file-loader和npm run build之后字体的存储文件夹
                 ]
+            },
+            {//处理handlebar
+                test:/\.handlebars$/,
+                use:[
+                    {loader:"handlebars-loader"}
+                ]
             }
         ]
+    },
+    node:{
+        fs:"empty"
     },
     plugins: [
         new HtmlWebpackPlugin({//简化了html文件的创建，以便为webpack包提供服务。

@@ -7,5 +7,15 @@ console.log("index content");
 
 // const arr = ["reng","jia","ming"];
 
-// alert(_.first(arr));
-// $("#index").html("reng");
+// import {login} from "./login.js";
+
+var loginTpl = require("./login.handlebars");
+
+$("#login").click(function(){
+    var div = document.createElement("div");
+    div.innerHTML = loginTpl({
+        name:"reng jia handlebars"
+    });
+    $("body").prepend(div);
+});
+
