@@ -78,7 +78,7 @@ $ npm run build
 
 6. [添加chunkhash值管理资源](./optimization/chunkhash.md)(2017-08-09)
 
-7. [添加handlebars处理](.optimization/handlebars.md)(2017-08-24)
+7. [添加handlebars处理](./optimization/handlebars.md)(2017-08-24)
 
 
 
