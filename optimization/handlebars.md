@@ -86,6 +86,6 @@ $("#login").click(function(){
 
 [handlebars官网](http://handlebarsjs.com/)
 
-[pcardune/handlebars-loader](./https://github.com/pcardune/handlebars-loader)
+[pcardune/handlebars-loader](https://github.com/pcardune/handlebars-loader)
 
 
