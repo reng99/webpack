@@ -7,9 +7,7 @@ console.log("index content");
 
 // const arr = ["reng","jia","ming"];
 
-// import {login} from "./login.js";
-
-var loginTpl = require("./login.handlebars");
+var loginTpl = require("../handlebars/login.handlebars");
 
 $("#login").click(function(){
     var div = document.createElement("div");

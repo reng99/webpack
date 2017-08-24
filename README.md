@@ -59,6 +59,7 @@ $ npm run build
     ...
 
 ```
+额外引入了`handlebars`。
 
 然而在生产环境中没有引用到，所以，在`npm run build`之后，你需要在使用到的页面引用`vendor`文件夹里面的内容。
 
@@ -77,6 +78,8 @@ $ npm run build
 
 6. [添加chunkhash值管理资源](./optimization/chunkhash.md)(2017-08-09)
 
+7. [添加handlebars处理](.optimization/handlebars.md)(2017-08-24)
+
 
 
 ## plugins选讲
@@ -93,6 +96,9 @@ $ npm run build
 - [jQuery](https://jquery.com/) --> jQuery is a fast,small,and feature-rich Javascript library.It makes things like HTML document traversal and manipulation,event handling,and Ajax much simpler with an easy-to-use API that works across a multitude of browers.With a combination of versatility,jQuery has changed the way thar millions of people write Javascript.
 
 - [lodash](https://lodash.com/) --> A modern JavaScript utility library delivering modularity(模块化),performance & extras. 类似[underscore](http://underscorejs.org/)
+
+- [handlebars](http://handlebarsjs.com/)(2017-08-24) --> Handlebars provides the power necessary to let you build `sematic templates`(语义话模板) effectively with no frustration.
+
 
 
 ## 仓库说明
