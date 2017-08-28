@@ -64,6 +64,51 @@ $ npm run build
 然而在生产环境中没有引用到，所以，在`npm run build`之后，你需要在使用到的页面引用`vendor`文件夹里面的内容。
 
 
+**转换成非压缩版的css和js**
+
+在某种情况下，需要对`npm run build`之后的生成的`.css`和  `.js`文件进行更改，这个时候压缩就不好阅读并更改，此时可以更改一下生成环境`./build/webpack.config.prod.js`里面的内容，注释掉压缩`js和css`的相关代码就行。
+
+```javascript
+    
+    ..
+    plugins:[//插件，具体的内容可以查看链接 -- https://doc.webpack-china.org/plugins/
+        
+        // 注释掉
+        new OptimizeCssAssetsPlugin({//对生产环境的css进行压缩
+            cssProcessorOptions:{
+                safe:true
+            }
+        }),
+        // 注释掉
+        new UglifyJSPlugin({//压缩js代码--链接 https://doc.webpack-china.org/plugins/uglifyjs-webpack-plugin/
+
+        }),
+        
+    ],
+    ...
+
+````
+然后更改一下生成文件的名称就可以了。`./build/webpack.base.config.js`
+
+```javascript
+    ...
+    output:{
+        path:path.join(__dirname,'../dist/'),
+        filename:'js/[name].[chunkhash].js',// 原先压缩的为'js/[name].[chunkhash].min.js'
+    },
+    ...
+    plugins:[
+        ...
+        new ExtractTextPlugin({//从bundle中提取出
+            filename:(getPath)=>{
+                return getPath('css/[name].[chunkhash].css').replace('css/js', 'css'); // 原名'css/[name].[chunkhash].min.css'
+             },
+       ...
+    ]
+```
+
+
+
 ## 优化历史(optimation 文件夹中)
 
 1. [提交到github忽略node_modules等文件](./optimization/gitignore.md)
