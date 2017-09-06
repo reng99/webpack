@@ -142,7 +142,7 @@ $ npm run build
 
 - [lodash](https://lodash.com/) --> A modern JavaScript utility library delivering modularity(模块化),performance & extras. 类似[underscore](http://underscorejs.org/)
 
-- [handlebars](http://handlebarsjs.com/)(2017-08-24) --> Handlebars provides the power necessary to let you build `sematic templates`(语义话模板) effectively with no frustration.
+- [handlebars](http://handlebarsjs.com/)(2017-08-24) --> Handlebars provides the power necessary to let you build `sematic templates`(语义化模板) effectively with no frustration.
 
 
 
