@@ -121,9 +121,11 @@ $ npm run build
 
 5. [添加eslint规范代码](./optimization/eslint.md)
 
-6. [添加chunkhash值管理资源](./optimization/chunkhash.md)(2017-08-09)
+6. [添加chunkhash值管理资源](./optimization/chunkhash.md) 2017-08-09
 
-7. [添加handlebars处理](./optimization/handlebars.md)(2017-08-24)
+7. [添加handlebars处理](./optimization/handlebars.md) 2017-08-24
+
+8. [使用chunksSortMode对相关的js进行顺序管理](./optimization/jsQueue.md) 2017-09-07
 
 
 
