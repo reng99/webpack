@@ -49,4 +49,6 @@
 
 - [html-webpack-plugin](https://www.npmjs.com/package/html-webpack-plugin)
 
+- [chunksSortMode_issue](https://github.com/jantimon/html-webpack-plugin/issues/481)
+
 `chunksSortMode:` Allows to control how chunks should be sorted before they are included to the html. Allowed values: 'none' | 'auto' | 'dependency' |'manual' | {function} - default: 'auto'
