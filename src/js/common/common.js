@@ -7,3 +7,7 @@ console.log("common content");
 // function reng(){
 //     console.log("reng jia ming");
 // }
+
+(()=>{
+    console.log("reng jia");
+})();
