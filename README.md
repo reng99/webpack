@@ -30,7 +30,6 @@
 $ git clone https://github.com/reng99/webpack.git
 
 # 进入根目录
-
 $ cd webpack
 
 # 安装依赖
