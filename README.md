@@ -29,6 +29,10 @@
 # 下载代码
 $ git clone https://github.com/reng99/webpack.git
 
+# 进入根目录
+
+$ cd webpack
+
 # 安装依赖
 $ npm install   (如果安装依赖失败，有可能是您的npm 版本过低哦，请尝试npm i -g npm 之后执行npm install)
 
