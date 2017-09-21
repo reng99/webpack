@@ -8,6 +8,6 @@ console.log("common content");
 //     console.log("reng jia ming");
 // }
 
-(()=>{
-    console.log("reng jia");
-})();
+// (()=>{  这里的webpack uglifyjsplugin暂时没有支持es6的语法，需要配置
+//     console.log("reng jia");
+// })();

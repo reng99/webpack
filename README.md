@@ -30,7 +30,7 @@
 $ git clone https://github.com/reng99/webpack.git
 
 # 安装依赖
-$ npm install   (如何安装以来失败，有可能是你的npm 版本过低，请尝试npm i -g npm 之后执行npm install)
+$ npm install   (如何安装以来失败，有可能是你的npm 版本过低，请尝试npm i -g npm 之后执行npm install,请保持网络的顺畅)
 
 # 开发模式
 $ npm run dev
@@ -69,10 +69,10 @@ $ npm run build
 在某种情况下，需要对`npm run build`之后的生成的`.css`和  `.js`文件进行更改，这个时候压缩就不好阅读并更改，此时可以更改一下生成环境`./build/webpack.config.prod.js`里面的内容，注释掉压缩`js和css`的相关代码就行。
 
 ```javascript
-    
+
     ..
     plugins:[//插件，具体的内容可以查看链接 -- https://doc.webpack-china.org/plugins/
-        
+
         // 注释掉
         new OptimizeCssAssetsPlugin({//对生产环境的css进行压缩
             cssProcessorOptions:{
@@ -83,7 +83,7 @@ $ npm run build
         new UglifyJSPlugin({//压缩js代码--链接 https://doc.webpack-china.org/plugins/uglifyjs-webpack-plugin/
 
         }),
-        
+
     ],
     ...
 

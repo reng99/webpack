@@ -13,8 +13,8 @@ module.exports = merge(baseWebpackConfig,{
                 safe:true
             }
         }),
-        // new UglifyJSPlugin({//压缩js代码--链接 https://doc.webpack-china.org/plugins/uglifyjs-webpack-plugin/
+        new UglifyJSPlugin({//压缩js代码--链接 https://doc.webpack-china.org/plugins/uglifyjs-webpack-plugin/
 
-        // }),
+        }),
     ],
 })
