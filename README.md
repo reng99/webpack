@@ -30,7 +30,7 @@
 $ git clone https://github.com/reng99/webpack.git
 
 # 安装依赖
-$ npm install   (如果安装依赖失败，有可能是您的npm 版本过低:blush:，请尝试npm i -g npm 之后执行npm install)
+$ npm install   (如果安装依赖失败，有可能是您的npm 版本过低哦，请尝试npm i -g npm 之后执行npm install)
 
 # 开发模式
 $ npm run dev
