@@ -169,5 +169,5 @@ $ npm run build
 
 ## 后话
 
-项目完成之后，在公司的项目上线后，会将整套前端基于本仓库搭建的效果和使用方法新建一个仓库放出来，敬请期待！喜欢本仓库的搭建就star🌟支持一下啦:blush:
+项目已经上线，基于本仓库完成的前端效果--线上的地址为[https://www.taomitao.com/](https://www.taomitao.com/)。喜欢本仓库的搭建就star🌟支持一下啦:blush:
 
