@@ -35,7 +35,7 @@ $ cd webpack
 # 安装依赖
 $ npm install   (如果安装依赖失败，有可能是您的npm 版本过低哦，请尝试npm i -g npm 之后执行npm install)
 
-# 开发模式
+# 开发模式 (执行完npm run dev 后，如果浏览器没有弹出新窗口，请手动输入localhost:9000访问)
 $ npm run dev
 
 # 检查语法(此步骤可省略，因为在开发的过程中已经检查)
@@ -170,4 +170,6 @@ $ npm run build
 ## 后话
 
 项目已经上线，基于本仓库完成的前端效果--线上的地址为[https://www.taomitao.com/](https://www.taomitao.com/) 2017-11-03。喜欢本仓库的搭建就star🌟支持一下啦:blush:
+
+最近自己花了一周时间重新搭建了自己的博客，网站是http:reng99.cc 在2018年一月份之后，公司本项目（pc端和m端）结束后，自己会将自己的webpack的搭建重头到尾用博文的方式展示出来，还请多多指教！
 
